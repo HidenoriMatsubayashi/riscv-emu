@@ -44,6 +44,8 @@ cargo build --release
 ../target/release/riscv_emu_desktop -k ../artifacts/nuttx/nuttx -m SiFive_e
 ```
 
+![animation](./demo/nuttx.gif)
+
 #### xv6
 
 ```
@@ -52,6 +54,8 @@ cargo build --release
    -m Qemu_virt \
    -f ../artifacts/xv6/fs.img
 ```
+
+![animation](./demo/xv6.gif)
 
 #### FreeRTOS
 
