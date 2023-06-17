@@ -30,10 +30,10 @@ cargo build --release
 
 ```
 ../target/release/riscv_emu_desktop \
-        -k ../artifacts/linux/fw_payload.elf \
-        -m Qemu_virt \
-        -d ../artifacts/linux/dtb/qemu_virtio.dtb \
-        -f ../artifacts/linux/rootfs.img
+   -k ../artifacts/linux/fw_payload.elf \
+   -m Qemu_virt \
+   -d ../artifacts/linux/dtb/qemu_virtio.dtb \
+   -f ../artifacts/linux/rootfs.img
 ```
 
 ![animation](./demo/linux.gif)
@@ -44,18 +44,14 @@ cargo build --release
 ../target/release/riscv_emu_desktop -k ../artifacts/nuttx/nuttx -m SiFive_e
 ```
 
-![animation](./demo/nuttx-riscv.gif)
-
 #### xv6
 
 ```
 ../target/release/riscv_emu_desktop \
-        -k ../artifacts/xv6/kernel \
-        -m Qemu_virt \
-        -f ../artifacts/xv6/fs.img
+   -k ../artifacts/xv6/kernel \
+   -m Qemu_virt \
+   -f ../artifacts/xv6/fs.img
 ```
-
-![animation](./demo/xv6-riscv.gif)
 
 #### FreeRTOS
 
@@ -68,8 +64,6 @@ cargo build --release
 ```
 ../target/release/riscv_emu_desktop -k ../artifacts/zephyr/zephyr.elf -m SiFive_e
 ```
-
-![animation](./demo/zephyr.gif)
 
 #### User bare-metal programs
 
@@ -124,7 +118,7 @@ cargo test
 
 ### Support OS
 
- - [Linux]()
+ - Linux
  - [Nuttx](https://bitbucket.org/nuttx/nuttx/src/master/)
  - [xv6-riscv](https://github.com/mit-pdos/xv6-riscv)
  - [FreeRTOS](https://www.freertos.org/)
